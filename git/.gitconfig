@@ -1,0 +1,13 @@
+[user]
+	name = John Harvey
+	email = thegradientvector@gmail.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+[merge]
+	tool = vimdiff
+[push]
+	default = simple
