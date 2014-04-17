@@ -1,6 +1,10 @@
+" Set Working Directory (uncomment for Windows)
+" cd C:/users/john.harvey/
+
 " General settings
 set number
 set nocompatible
+set backspace=indent,eol,start
 
 " Search settings
 set incsearch
