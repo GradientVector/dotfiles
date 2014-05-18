@@ -7,6 +7,14 @@ set nocompatible
 set backspace=indent,eol,start
 set hidden
 
+" Mouse settings
+set mouse=a "Enable the mouse for all modes
+set ttymouse=xterm2 " Set this to the name of your terminal that supports mouse codes.
+                    " Must be one of: 
+                    " xterm, xterm2, netterm, dec, jsbterm, pterm
+set ttyfast "Send more characters for redraws
+
+
 " Search settings
 set incsearch
 set hlsearch
