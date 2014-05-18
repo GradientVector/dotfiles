@@ -5,6 +5,7 @@
 set number
 set nocompatible
 set backspace=indent,eol,start
+set hidden
 
 " Search settings
 set incsearch
