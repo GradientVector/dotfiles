@@ -34,9 +34,6 @@ filetype on
 filetype indent on
 filetype plugin on
 
-"gVim settings
-:set guioptions -=T "remove toolbar
-
 "Makefile settings
 autocmd FileType make set noexpandtab | set list | set listchars=tab:\~\ 
 
@@ -49,3 +46,6 @@ autocmd FileType ruby compiler ruby
 
 "YAML syntax coloring and functions
 au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
+
+"Arduino
+"autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
