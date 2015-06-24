@@ -43,18 +43,27 @@ filetype on
 filetype indent on
 filetype plugin on
 
-"Makefile settings
-autocmd FileType make set noexpandtab | set list | set listchars=tab:\~\ 
-
-"HTML settings
-autocmd FileType html set tabstop=2 | set softtabstop=2 | set shiftwidth=2
-
-"Ruby settings
-autocmd FileType ruby set tabstop=2 | set softtabstop=2 | set shiftwidth=2 
-autocmd FileType ruby compiler ruby
+if has("autocmd")
+    "Makefile settings
+    autocmd FileType make set noexpandtab | set list | set listchars=tab:\~\ 
+    
+    "HTML settings
+    autocmd FileType html set tabstop=2 | set softtabstop=2 | set shiftwidth=2
+    
+    "Ruby settings
+    autocmd FileType ruby set tabstop=2 | set softtabstop=2 | set shiftwidth=2 
+    autocmd FileType ruby compiler ruby
+endif
 
 "YAML syntax coloring and functions
 au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 
 "Arduino
 "autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+
+"Enhance '%' command
+runtime macros/matchit.vim
+
+"Handle error messages from Unity test framework for C
+set errorformat^=%*[%.]%f:%l:%m
+
