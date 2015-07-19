@@ -38,28 +38,10 @@ inoremap <C-y> <C-x><C-y>
 
 " Syntax Highlighting
 set background=dark
-syntax on
 filetype on
-filetype indent on
 filetype plugin on
-
-if has("autocmd")
-    "Makefile settings
-    autocmd FileType make set noexpandtab | set list | set listchars=tab:\~\ 
-    
-    "HTML settings
-    autocmd FileType html set tabstop=2 | set softtabstop=2 | set shiftwidth=2
-    
-    "Ruby settings
-    autocmd FileType ruby set tabstop=2 | set softtabstop=2 | set shiftwidth=2 
-    autocmd FileType ruby compiler ruby
-endif
-
-"YAML syntax coloring and functions
-au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
-
-"Arduino
-"autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+filetype indent on
+syntax on
 
 "Enhance '%' command
 runtime macros/matchit.vim
