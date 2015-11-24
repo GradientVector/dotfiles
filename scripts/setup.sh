@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-src=GitHub/dotfiles
+pushd ".." > /dev/null
+src=`pwd -P`
+popd > /dev/null
 files=".bashrc .bash_logout .profile .gitconfig .tmux.conf .vimrc .gvimrc "
 
 for i in $files;
