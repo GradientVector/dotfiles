@@ -1,0 +1,3 @@
+# Clear the shell history
+history -cw
+

@@ -1,0 +1,8 @@
+# Command for executing C code using here-document syntax.
+go_libs="-lm"
+go_flags="-g -Wall -include allheads.h -O3"
+alias go_c="c99 -xc - $go_libs $go_flags"
+
+# Allows TMUX to open new panes in path of current pane (using #{pane_current_path}).
+export CHERE_INVOKING=1
+
